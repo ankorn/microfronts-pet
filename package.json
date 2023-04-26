@@ -1,0 +1,20 @@
+{
+  "name": "microfronts-pet",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "./host",
+      "./remote"
+    ]
+  },
+  "scripts": {
+    "start": "lerna run --scope=cra_* start",
+    "stop": "lerna run --scope=cra_* stop",
+    "build": "lerna run --scope=cra_* build'",
+    "serve": "lerna run --scope=cra_* serve'",
+    "clean": "lerna run --scope=cra_* clean'"
+  },
+  "devDependencies": {
+    "lerna": "3.22.1"
+  }
+}
